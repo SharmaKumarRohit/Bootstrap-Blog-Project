@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome To My Blog Website or ICDL Coding Class">
+    <meta name="robot" content="index, archiver">
+    <title>Bootstrpa Project</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://agentportfolio.netlify.app">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://weatherapp231.netlify.app/">Weather App</a></li>
+                  <li><a class="dropdown-item" href="https://projectonbusinesswebsite.netlify.app/">Business Website</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://agentportfolio.netlify.app">My Protfolio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contactUs">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2 my-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login and Connect Me</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUP Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp and Join</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-4">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/image-one.jpg" alt="" width="100%" height="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Welcome</h1>
+          <p class="opacity-75">Welcome to My Coding World</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/image-two.jpg" alt="" width="100%" height="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>UI/UX Design</h1>
+          <p>Best Front-end Project</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/image-three.jpg" alt="" width="100%" height="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Get In Touch</h1>
+          <p>Realistic Design and Templates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+      <div class="container my-4" id="about">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Design one</strong>
+                <h3 class="mb-0">Weather App</h3>
+                <div class="mb-1 text-body-secondary">July 2023</div>
+                <p class="card-text mb-auto">This application will show the temperature of a location. To fetch weather information we will need an API. </p>
+                <a href="https://weatherapp231.netlify.app/" class="icon-link gap-1 icon-link-hover stretched-link">
+                  See App
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="./img/project-one.jpg" alt="" width="200" height="250">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Design two</strong>
+                <h3 class="mb-0">Business Website</h3>
+                <div class="mb-1 text-body-secondary">May 2023</div>
+                <p class="mb-auto">It's easy to build a beautiful site by applying one of our pre-designed color palettes and themes in just a few clicks.</p>
+                <a href="https://projectonbusinesswebsite.netlify.app/" class="icon-link gap-1 icon-link-hover stretched-link">
+                  See Design
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="./img/project-two.jpg" alt="" width="200" height="250">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Design Three</strong>
+                <h3 class="mb-0">Portfolio Design</h3>
+                <div class="mb-1 text-body-secondary">Design 2023</div>
+                <p class="card-text mb-auto">A well-designed portfolio is essential for showcasing your work as a Website. Format has compiled a list of some of the best writer websites to help inspire you.</p>
+                <a href="https://agentportfolio.netlify.app" class="icon-link gap-1 icon-link-hover stretched-link">
+                  See Portfolio
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="./img/project-three.jpg" alt="" width="200" height="250">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Design Four</strong>
+                <h3 class="mb-0">Blog Design</h3>
+                <div class="mb-1 text-body-secondary">July 2023</div>
+                <p class="mb-auto">Blog posts allow you and your business to publish insights, thoughts, and stories on your website about any topic.</p>
+                <a href="./index.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                  See Website
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="./img/project-four.jpg" alt="" width="200" height="250">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">ICDL Coding Class
+            </span></h2>
+            <p class="lead">Computer skills may not seem like something that is necessary to refugees, and it definitely isn’t something that they can easily have access to. “Some of the women who started the first ICDL class didn’t know how to hold a mouse, let alone work a computer, but the improvement we’ve seen with these women is […]</p>
+          </div>
+          <div class="col-md-5">
+            <img src="./img/pic-one.jpg" alt="" class="img-fluid"></div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">Introduction for yourself.</span></h2>
+            <p class="lead">To start your self-introduction, state your name and job title or experience. If you are unemployed and introducing yourself to a prospective employer or business contact, highlight your educational background and skills instead.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="./img/pic-two.jpg" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Computer and Technology. <span class="text-body-secondary">Evolution of technology.</span></h2>
+            <p class="lead">The pen is one of the first technologies that made it easier for humans to record and reference their previous thoughts and actions. That technology was later improved upon with the development of the printing press. This device made it easier to mass produce the written word, allowing broader access to information. Later, typewriters were created, which made it easier and faster for anyone to create documents.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="./img/pic-three.jpg" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+
+      <div class="container" id="contactUs">
+        <form>
+          <div class="row mb-4">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <select class="form-select mb-4" aria-label="Default select example">
+            <option selected>Select Your Course</option>
+            <option value="1">Front-end Development</option>
+            <option value="2">Back-end Development</option>
+            <option value="3">Full Stack Development</option>
+          </select>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Review of Blog:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <footer class="container my-4">
+        <p>© 2021-2023 Designed By - Rohit Kumar <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
